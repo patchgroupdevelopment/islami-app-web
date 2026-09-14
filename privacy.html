@@ -21,10 +21,11 @@
 <body>
 
 <a class="lang" href="#az">Azərbaycanca</a><a class="lang" href="#en">English</a>
+<nav class="muted"><a href="terms.html">Şərtlər</a> · <a href="delete-account.html">Hesab silmə</a> · <a href="support.html">Dəstək</a></nav>
 
 <section id="az">
 <h1>Ruhya — Məxfilik Siyasəti</h1>
-<p class="muted">Son yenilənmə: 20 iyul 2026 · Tətbiq: Ruhya (İslami namaz və Quran tətbiqi)</p>
+<p class="muted">Son yenilənmə: 14 sentyabr 2026 · Tətbiq: Ruhya (İslami namaz və Quran tətbiqi)</p>
 
 <p>Ruhya istifadəçilərin məxfiliyinə hörmətlə yanaşır. Tətbiq <strong>yerli-birinci (local-first)</strong> prinsipi ilə qurulub: hesab yaratmasanız, məlumatlarınız yalnız cihazınızda qalır. Hesab (könüllü) yaratsanız, yalnız sinxronizasiya üçün lazım olan məlumatlar buludda saxlanılır.</p>
 
@@ -33,25 +34,30 @@
   <li><strong>Məkan (koordinat):</strong> Namaz vaxtlarını və qiblə istiqamətini hesablamaq üçün. Məkan <em>yalnız cihazınızda</em> emal edilir, serverə göndərilmir. İcazə verməsəniz, şəhəri əl ilə seçə bilərsiniz.</li>
   <li><strong>Hesab məlumatı (könüllü):</strong> Hesab yaratsanız, <strong>e-poçt ünvanınız</strong> giriş üçün bulud xidmətimizdə (Supabase) saxlanılır. Giriş 6 rəqəmli birdəfəlik kod ilədir. Hesabsız (qonaq) istifadə tam mümkündür.</li>
   <li><strong>Sinxronizasiya (yalnız daxil olduqda):</strong> Seçilmiş ayələr, namaz izləmə, zikr sayğacı, oruc və ayarlar cihazlar arası sinxronlaşması üçün hesabınıza bağlı saxlanılır. Qonaq rejimində bu məlumatlar yalnız cihazınızda qalır.</li>
+  <li><strong>Alış qeydləri (yalnız Premium alanda):</strong> Google Play və ya App Store-dan aldığınız Premium-un statusunu hesabınızda tanımaq üçün mağazanın verdiyi <em>qəbz identifikatoru</em> (məhsul, status, bitmə tarixi) hesabınıza bağlı saxlanılır. Kart məlumatlarınız Ruhya-ya heç vaxt çatmır — ödənişi mağaza emal edir.</li>
+  <li><strong>Xəta hesabatları (anonim):</strong> Tətbiq çökəndə cihaz modeli, sistem versiyası və xətanın texniki izi (Sentry) göndərilə bilər ki, problemi düzəldək. Bu hesabatlarda ad, e-poçt və ya məkan yoxdur.</li>
 </ul>
 
 <h2>Bulud xidməti (Supabase)</h2>
 <p>Hesab və sinxronizasiya üçün <a href="https://supabase.com">Supabase</a> (Avropa serverləri) istifadə olunur. Yalnız yuxarıda göstərilən məlumatlar saxlanılır. Reklam, izləmə və üçüncü tərəflərə satış YOXDUR.</p>
 
+<h2>Tətbiqdaxili alışlar</h2>
+<p>Premium abunəlik və birdəfəlik alış Google Play / App Store vasitəsilə həyata keçirilir və onların məxfilik siyasətinə tabedir. Alışın həqiqiliyini yoxlamaq üçün serverimiz mağazanın rəsmi API-si ilə qəbzi təsdiqləyir. Şərtlər: <a href="terms.html">İstifadə şərtləri</a>.</p>
+
 <h2>Toplamadığımız məlumatlar</h2>
-<p>Şəxsi məlumatlarınızı reklam üçün istifadə etmirik, üçüncü tərəflərə satmırıq. Analitika izləyicisi və reklam SDK-sı yoxdur.</p>
+<p>Şəxsi məlumatlarınızı reklam üçün istifadə etmirik, üçüncü tərəflərə satmırıq. Reklam SDK-sı yoxdur. İstifadə statistikası toplanırsa, anonimdir (hansı ekranların istifadə olunduğu) və şəxsiyyətə bağlanmır.</p>
 
 <h2>Bildirişlər</h2>
 <p>Azan və namaz xatırlatmaları cihazınızda lokal olaraq planlaşdırılır — xarici serverə əlaqə yoxdur.</p>
 
 <h2>İnternet istifadəsi</h2>
-<p>Tətbiq internetdən: <strong>Quran audiosu</strong> (açıq mənbələr), <strong>məscid xəritəsi</strong> (OpenStreetMap) və (hesab varsa) <strong>sinxronizasiya</strong> üçün istifadə edir. Namaz vaxtları, Quran mətni, qiblə və dualar internetsiz işləyir.</p>
+<p>Tətbiq internetdən: <strong>Quran audiosu</strong>, <strong>məscid xəritəsi</strong> (OpenStreetMap məlumatları, xəritə təsvirləri üçün xəritə provayderi), <strong>Premium alışının təsdiqi</strong> və (hesab varsa) <strong>sinxronizasiya</strong> üçün istifadə edir. Namaz vaxtları, Quran mətni, qiblə və dualar internetsiz işləyir.</p>
 
 <h2>Uşaqlar</h2>
 <p>Tətbiq hər yaş üçün uyğundur və uşaqlardan bilərəkdən məlumat toplamır.</p>
 
 <h2>Məlumatların silinməsi</h2>
-<p>Cihazdakı məlumatları tətbiqi silməklə və ya daxildəki sıfırlama ilə silə bilərsiniz. <strong>Hesabınızı və bütün bulud məlumatlarınızı</strong> tətbiq daxilində <em>Profil → Hesabı sil</em> ilə həmişəlik silə bilərsiniz.</p>
+<p>Cihazdakı məlumatları tətbiqi silməklə və ya daxildəki sıfırlama ilə silə bilərsiniz. <strong>Hesabınızı və bütün bulud məlumatlarınızı</strong> tətbiq daxilində <em>Profil → Hesabı sil</em> ilə həmişəlik silə bilərsiniz. Tətbiqə girişiniz yoxdursa: <a href="delete-account.html">hesab silmə səhifəsi</a>.</p>
 
 <h2>Əlaqə</h2>
 <p>Suallar üçün: <a href="mailto:fuadsoltanli03@gmail.com">fuadsoltanli03@gmail.com</a></p>
@@ -61,7 +67,7 @@
 
 <section id="en">
 <h1>Ruhya — Privacy Policy</h1>
-<p class="muted">Last updated: 20 July 2026 · App: Ruhya (Islamic prayer & Quran app)</p>
+<p class="muted">Last updated: 14 September 2026 · App: Ruhya (Islamic prayer & Quran app)</p>
 
 <p>Ruhya respects your privacy. The app is <strong>local-first</strong>: if you don't create an account, your data stays only on your device. If you create an account (optional), only the data needed for sync is stored in the cloud.</p>
 
@@ -70,25 +76,30 @@
   <li><strong>Location (coordinates):</strong> To calculate prayer times and qibla direction. Processed <em>only on your device</em>, never sent to a server. If you deny permission, you can pick your city manually.</li>
   <li><strong>Account info (optional):</strong> If you create an account, your <strong>email address</strong> is stored in our cloud provider (Supabase) for sign-in. Sign-in uses a 6-digit one-time code. Guest use (no account) is fully supported.</li>
   <li><strong>Sync (only when signed in):</strong> Bookmarks, prayer tracking, dhikr counter, fasting and settings are stored with your account for cross-device sync. In guest mode this data stays only on your device.</li>
+  <li><strong>Purchase records (only if you buy Premium):</strong> To recognise your Premium status on your account we store the store-issued <em>receipt identifier</em> (product, status, expiry) with your account. Your card details never reach Ruhya — the store processes the payment.</li>
+  <li><strong>Crash reports (anonymous):</strong> If the app crashes, the device model, OS version and a technical trace of the error may be sent (Sentry) so we can fix it. These reports contain no name, e-mail or location.</li>
 </ul>
 
 <h2>Cloud service (Supabase)</h2>
 <p>We use <a href="https://supabase.com">Supabase</a> (EU servers) for accounts and sync. Only the data listed above is stored. No advertising, tracking, or selling to third parties.</p>
 
+<h2>In-app purchases</h2>
+<p>Premium subscriptions and the one-time purchase are handled by Google Play / the App Store under their privacy policies. To verify a purchase our server confirms the receipt with the store's official API. Terms: <a href="terms.html">Terms of Use</a>.</p>
+
 <h2>Data we do NOT collect</h2>
-<p>We do not use your data for advertising or sell it to third parties. No analytics trackers, no ad SDKs.</p>
+<p>We do not use your data for advertising or sell it to third parties. No ad SDKs. Any usage statistics are anonymous (which screens are used) and not linked to your identity.</p>
 
 <h2>Notifications</h2>
 <p>Adhan and prayer reminders are scheduled locally on your device — no external server is contacted.</p>
 
 <h2>Internet usage</h2>
-<p>The app uses the internet for: <strong>Quran audio</strong> (open sources), the <strong>mosque map</strong> (OpenStreetMap), and (if you have an account) <strong>sync</strong>. Prayer times, Quran text, qibla and duas work offline.</p>
+<p>The app uses the internet for: <strong>Quran audio</strong>, the <strong>mosque map</strong> (OpenStreetMap data; a map provider for map imagery), <strong>Premium purchase verification</strong>, and (if you have an account) <strong>sync</strong>. Prayer times, Quran text, qibla and duas work offline.</p>
 
 <h2>Children</h2>
 <p>The app is suitable for all ages and does not knowingly collect data from children.</p>
 
 <h2>Data deletion</h2>
-<p>Device data can be removed by uninstalling the app or resetting in-app. You can permanently delete <strong>your account and all cloud data</strong> in-app via <em>Profile → Delete account</em>.</p>
+<p>Device data can be removed by uninstalling the app or resetting in-app. You can permanently delete <strong>your account and all cloud data</strong> in-app via <em>Profile → Delete account</em>. If you can no longer access the app: <a href="delete-account.html">account deletion page</a>.</p>
 
 <h2>Contact</h2>
 <p>Questions: <a href="mailto:fuadsoltanli03@gmail.com">fuadsoltanli03@gmail.com</a></p>
